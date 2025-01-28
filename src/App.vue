@@ -1,15 +1,21 @@
-<script setup></script>
+<script>
+import MHeader from './components/MHeader.vue'
+import MFooter from './components/MFooter.vue'
+
+export default {
+  components: {
+    MHeader,
+    MFooter,
+  },
+}
+</script>
 
 <template>
-  <header></header>
-
+  <MHeader />
   <main>
     <h1>EMENTOR</h1>
   </main>
+  <MFooter />
 </template>
 
-<style scoped>
-header {
-  background-color: #dda1a1;
-}
-</style>
+<style scoped></style>

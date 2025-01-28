@@ -1,3 +1,7 @@
+# the link to figma project is below
+
+# https://www.figma.com/file/8OpZzALnqpoekHAoe9toSk/ementor?node-id=0%3A1
+
 # ementor-kafa
 
 This template should help get you started developing with Vue 3 in Vite.

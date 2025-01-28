@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+  color: var(--white);
+}
+
+:root {
+  --green: #10b582;
+  --white: #fdfdfd;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(./fonts/Raleway-Medium.ttf);
+}
