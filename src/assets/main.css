@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Raleway;
+  /* font-family: RalewayM; */
   color: var(--white);
 }
 
@@ -12,6 +12,11 @@
 }
 
 @font-face {
-  font-family: Raleway;
+  font-family: RalewayM;
   src: url(./fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: RalewayR;
+  src: url(./fonts/Raleway-Regular.ttf);
 }

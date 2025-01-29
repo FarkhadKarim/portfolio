@@ -1,10 +1,10 @@
 <template>
-  <div>MFooter is here</div>
+  <div class="footer-div">MFooter is here</div>
 </template>
 
 <style scoped>
 * {
   background: var(--green);
-  border: 1px solid black;
+  width: 1440px;
 }
 </style>
