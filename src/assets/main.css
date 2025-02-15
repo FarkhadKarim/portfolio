@@ -2,15 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: RalewayM; */
-  color: var(--white);
+  font-size: 16px;
 }
 
 :root {
-  --green: #10b582;
-  --white: #fdfdfd;
+  --green-bc: #10b582;
+  --main-bc-white: #e5e5e5;
+  --white-text: #fdfdfd;
+  --footer-text: #353a5a;
 }
-
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  padding-right: 135px;
+  padding-left: 135px;
+}
 @font-face {
   font-family: RalewayM;
   src: url(./fonts/Raleway-Medium.ttf);
