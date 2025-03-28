@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <section class="hero">
     <div class="section-1 container">
       <div class="hero-socials">
         <a href="https://facebook.com" target="_blank">
@@ -22,7 +22,7 @@
         <img src="./img/1.png" alt="" />
       </div>
       <div class="hero-content">
-        <div>
+        <div class="hero-content-text">
           <p>Образовательная</p>
           <p>онлайн-платформа</p>
         </div>
@@ -40,17 +40,22 @@
         <div><img src="./img/arrowdown.svg" alt="" /></div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script></script>
 
 <style scoped>
-.section-1 {
+.hero {
   width: 100%;
-  /* height: 100vh; */
+  height: 800px;
   background: var(--green-bc);
   color: var(--white-text);
+}
+.section-1 {
+  width: 100%;
+  height: 800px;
+  position: relative;
 }
 
 .hero-socials {

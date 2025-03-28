@@ -61,7 +61,7 @@
 <style scoped>
 .footer {
   padding-top: 80px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   width: 100%;
   /* max-height: 345px; */
   background-color: #e25f5f;
