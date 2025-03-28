@@ -128,7 +128,7 @@
   font-size: 16px;
   font-family: RalewayM;
   border: none;
-  border-radius: 15px 0 15px 0;
+  border-radius: 0 15px 0 15px;
   cursor: pointer;
   margin-top: 50px;
 }

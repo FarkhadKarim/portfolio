@@ -25,6 +25,7 @@ a {
   margin: 0 auto;
   padding-left: 135px;
   padding-right: 135px;
+  border: 1px black solid;
 }
 @font-face {
   font-family: RalewayM;
