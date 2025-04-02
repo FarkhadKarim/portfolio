@@ -19,7 +19,6 @@
           <div><p>учеников уже занимаются на нашей платформе</p></div>
         </div>
       </div>
-
       <div class="team">
         <div class="team-desc">
           <p>Учитесь у лучших</p>

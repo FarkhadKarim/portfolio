@@ -4,6 +4,7 @@ import MHero from './components/MHero/MHero.vue'
 import MFooter from './layouts/MFooter.vue'
 import MTeam from './components/MTeam/MTeam.vue'
 import MEduFormat from './components/MEduFormat/MEduFormat.vue'
+import MCourses from '@/components/MCourses/MCourses.vue'
 export default {
   components: {
     MHeader,
@@ -11,6 +12,7 @@ export default {
     MFooter,
     MTeam,
     MEduFormat,
+    MCourses,
   },
 }
 </script>
@@ -21,6 +23,7 @@ export default {
     <MHero />
     <MTeam />
     <MEduFormat />
+    <MCourses />
   </main>
   <MFooter />
 </template>
