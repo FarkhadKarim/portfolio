@@ -107,6 +107,11 @@ export default {
   justify-content: space-between;
   gap: 15px;
 }
+.stats-content div:first-child {
+  font-family: RalewayM;
+  font-size: 58px;
+  color: var(--green-bc);
+}
 .team {
   display: flex;
   flex-direction: row;

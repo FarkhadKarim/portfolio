@@ -6,6 +6,7 @@ import MTeam from './components/MTeam/MTeam.vue'
 import MEduFormat from './components/MEduFormat/MEduFormat.vue'
 import MCourses from '@/components/MCourses/MCourses.vue'
 import MJoin from '@/components/MJoin/MJoin.vue'
+import MMotion from '@/components/MMotionDesign/MMotionDesign.vue'
 
 export default {
   components: {
@@ -16,6 +17,7 @@ export default {
     MEduFormat,
     MCourses,
     MJoin,
+    MMotion,
   },
 }
 </script>
@@ -28,6 +30,7 @@ export default {
     <MEduFormat />
     <MCourses />
     <MJoin />
+    <MMotion />
   </main>
   <MFooter />
 </template>
