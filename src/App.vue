@@ -8,6 +8,7 @@ import MCourses from '@/components/MCourses/MCourses.vue'
 import MJoin from '@/components/MJoin/MJoin.vue'
 import MMotion from '@/components/MMotionDesign/MMotionDesign.vue'
 import MActual from '@/components/MActual/MActual.vue'
+import MCourseLearn from '@/components/MCourseLearn/MCourseLearn.vue'
 
 export default {
   components: {
@@ -20,6 +21,7 @@ export default {
     MJoin,
     MMotion,
     MActual,
+    MCourseLearn,
   },
 }
 </script>
@@ -36,6 +38,7 @@ export default {
   <MFooter />
   <MMotion />
   <MActual />
+  <MCourseLearn />
 </template>
 
 <style scoped>
