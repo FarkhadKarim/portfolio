@@ -1,12 +1,12 @@
 <template>
   <header class="header">
-    <div class="content">
-      <div class="header-div container">
+    <div class="content container">
+      <div class="header-div">
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="header-nav-link"><a href="">О нас</a></li>
             <li class="header-nav-link"><a href="">Платформа</a></li>
-            <li class="header-nav-link"><a href="">Курсы</a></li>
+            <li class="header-nav-link"><a href="/motiondesign">Курсы</a></li>
             <li class="header-nav-link"><a href="">Лекции</a></li>
             <li class="header-nav-link"><a href="">Тарифы</a></li>
             <li class="header-nav-link"><a href="">Блог</a></li>

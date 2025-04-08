@@ -1,7 +1,7 @@
 <template>
   <header class="course-header">
-    <div class="course-header-content">
-      <div class="course-header-div container">
+    <div class="course-header-content container">
+      <div class="course-header-div">
         <div class="course-header-logo"></div>
         <div class="course-header-nav">
           <nav class="header-nav">
@@ -25,11 +25,11 @@
 
 <style scoped>
 header {
-  height: 60px;
+  height: 64px;
   width: 100%;
   position: fixed;
   z-index: 10;
   color: var(--footer-text);
-  /* background: var(--green-bc); */
+  background: var(--main-bc-white);
 }
 </style>
