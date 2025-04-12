@@ -3,9 +3,11 @@
     <div class="courses-content container">
       <p class="courses-content-title">Популярные курсы</p>
       <div class="courses-content-icons">
-        <div class="courses-content-icons-list" v-for="icon in courses" :key="icon">
-          <img :src="icon.img" alt="no-img" />
-        </div>
+        <router-link :to="icon.link" v-for="icon in courses" :key="icon">
+          <div class="courses-content-icons-list">
+            <img :src="icon.img" alt="no-img" />
+          </div>
+        </router-link>
       </div>
       <div class="courses-btn">
         <button class="courses-content-btn">Все курсы</button>
@@ -21,15 +23,19 @@ export default {
       courses: [
         {
           img: new URL('./img/1.png', import.meta.url).href,
+          link: '/motiondesign',
         },
         {
           img: new URL('./img/2.png', import.meta.url).href,
+          link: '/insta-target',
         },
         {
           img: new URL('./img/3.png', import.meta.url).href,
+          link: '/presentation',
         },
         {
           img: new URL('./img/4.png', import.meta.url).href,
+          link: '/smm-strategy',
         },
       ],
     }

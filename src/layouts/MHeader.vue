@@ -24,8 +24,8 @@ header {
   width: 100%;
   position: fixed;
   z-index: 10;
-  color: var(--white-text);
-  /* background: var(--green-bc); */
+  /* color: var(--white-text); */
+  background: var(--green-bc);
 }
 
 .header-div {
@@ -56,7 +56,7 @@ header {
   margin-right: 40px;
 }
 .header-nav-link a {
-  color: var(--white);
+  color: var(--white-text);
 }
 .header-nav-link:last-child {
   margin-right: 0;

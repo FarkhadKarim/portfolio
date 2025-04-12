@@ -20,6 +20,6 @@ main {
   /* margin-top: 60px; */
   min-height: 100vh;
   width: 100%;
-  color: blueviolet;
+  /* color: blueviolet; */
 }
 </style>
