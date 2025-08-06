@@ -1,5 +1,5 @@
 <template>
-  <section class="courses">
+  <section class="courses" id="all-courses">
     <div class="courses-content container">
       <p class="courses-content-title">Популярные курсы</p>
       <div class="courses-content-icons">

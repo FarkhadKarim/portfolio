@@ -6,7 +6,7 @@
           <ul class="header-nav-list">
             <li class="header-nav-link"><a href="">О нас</a></li>
             <li class="header-nav-link"><a href="">Платформа</a></li>
-            <li class="header-nav-link"><a href="/motiondesign">Курсы</a></li>
+            <li class="header-nav-link"><a href="#all-courses">Курсы</a></li>
             <li class="header-nav-link"><a href="">Лекции</a></li>
             <li class="header-nav-link"><a href="">Тарифы</a></li>
             <li class="header-nav-link"><a href="">Блог</a></li>
@@ -36,7 +36,8 @@ header {
 }
 .header-nav {
   /* position: absolute; */
-  margin-top: 36px;
+  margin-top: 30px;
+  padding-bottom: 6px;
   /* top: 40px; */
   /* left: 395px;
   right: 395px; */
@@ -62,6 +63,6 @@ header {
   margin-right: 0;
 }
 .header-nav-link:hover {
-  text-decoration: underline;
+  border-bottom: 2px dashed #fa9f42;
 }
 </style>

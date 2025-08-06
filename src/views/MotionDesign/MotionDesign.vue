@@ -1,7 +1,7 @@
 <template>
   <MCourseHeader />
   <main>
-    <!-- <UiBreadCrumbs :links="" /> -->
+    <UiBreadCrumbs />
     <MMotion />
     <MActual />
     <MCourseLearn />

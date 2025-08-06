@@ -3,19 +3,19 @@
     <div class="team-section-content container">
       <div class="stats">
         <div class="stats-content">
-          <div>1000</div>
+          <div><span class="number-box" data-number="100">0</span>+</div>
           <div><p>теоретических и практических курсов для разного уровня</p></div>
         </div>
         <div class="stats-content">
-          <div>1000</div>
+          <div><span class="number-box" data-number="3000">0</span></div>
           <div><p>часов видео-лекций и вебинаров от лучших преподавателей</p></div>
         </div>
         <div class="stats-content">
-          <div>1000</div>
+          <div><span class="number-box" data-number="15">0</span></div>
           <div><p>направлений обучения востребованным профессиям</p></div>
         </div>
         <div class="stats-content">
-          <div>1000</div>
+          <div><span class="number-box" data-number="2000">0</span></div>
           <div><p>учеников уже занимаются на нашей платформе</p></div>
         </div>
       </div>
@@ -74,6 +74,42 @@ export default {
     }
   },
 }
+document.addEventListener('scroll', () => {
+  const numberBoxes = document.querySelectorAll('.number-box')
+
+  numberBoxes.forEach((box) => {
+    // Skip if animation has already run
+    if (box.dataset.animated === 'true') {
+      return
+    }
+
+    const boxTop = box.getBoundingClientRect().top
+    const boxVisible = window.innerHeight - boxTop
+
+    if (boxVisible > 0) {
+      // Mark as animated to prevent re-running
+      box.dataset.animated = 'true'
+
+      const finalNumber = parseInt(box.getAttribute('data-number'), 10)
+      let startNumber = 0
+
+      const increment = Math.ceil(finalNumber / 100) // Increment step
+
+      const updateNumber = () => {
+        if (startNumber < finalNumber) {
+          startNumber += increment
+          if (startNumber > finalNumber) {
+            startNumber = finalNumber
+          }
+          box.textContent = startNumber
+          requestAnimationFrame(updateNumber)
+        }
+      }
+
+      updateNumber()
+    }
+  })
+})
 </script>
 
 <style scoped>

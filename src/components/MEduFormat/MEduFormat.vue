@@ -21,7 +21,7 @@
 
 <style scoped>
 .edu-form {
-  height: 602px;
+  height: auto;
   width: 100%;
   background: var(--green-bc);
   color: #fdfdfd;
@@ -54,5 +54,45 @@
   margin-bottom: 50px;
   font-family: RalewayR;
   line-height: 150%;
+}
+.icon {
+  max-width: 500px;
+}
+
+@media (max-width: 900px) {
+  /* .edu-form {
+    height: auto;
+  } */
+  .edu-form-content {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .edu-form-content div {
+    width: 100%;
+  }
+  .icon img {
+    width: 100%;
+    height: auto;
+  }
+  .course-content {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .course-content p:first-child {
+    font-family: RalewayM;
+    font-size: 32px;
+  }
+  .course-content p:nth-last-of-type(1) {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-family: RalewayR;
+    font-size: 14px;
+  }
 }
 </style>

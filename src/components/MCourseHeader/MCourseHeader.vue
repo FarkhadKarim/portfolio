@@ -12,7 +12,7 @@
             <ul class="header-nav-list">
               <li class="header-nav-link"><a href="">О нас</a></li>
               <li class="header-nav-link"><a href="">Платформа</a></li>
-              <li class="header-nav-link"><a href="">Курсы</a></li>
+              <li class="header-nav-link"><a href="/#all-courses">Курсы</a></li>
               <li class="header-nav-link"><a href="">Лекции</a></li>
               <li class="header-nav-link"><a href="">Тарифы</a></li>
               <li class="header-nav-link"><a href="">Блог</a></li>
@@ -43,7 +43,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 34px;
+  padding-bottom: 6px;
   /* color: black; */
 }
 .header-nav-list {
@@ -53,7 +54,7 @@ header {
   line-height: 24px;
 }
 .header-nav-link:hover {
-  text-decoration: underline;
+  border-bottom: 2px dashed #fa9f42;
 }
 .header-nav-link a {
   color: var(--footer-text);

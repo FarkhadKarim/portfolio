@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   /* font-size: 16px; */
+  scroll-behavior: smooth;
 }
 button {
   cursor: pointer;
@@ -36,4 +37,18 @@ a {
 @font-face {
   font-family: RalewayR;
   src: url(./fonts/Raleway-Regular.ttf);
+}
+@media (max-width: 600px) {
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1378px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

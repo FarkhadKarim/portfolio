@@ -1,5 +1,5 @@
 <template>
-  <section class="motion-course">
+  <section class="motion-course" id="motion-design-course">
     <div class="motion-content container">
       <div class="page-path">
         <p>Главная</p>
@@ -39,19 +39,19 @@
       </div>
       <div class="motion-stat">
         <div class="motion-stat-content">
-          <div class="motion-stat-num">8</div>
+          <div class="motion-stat-num"><span class="number-box" data-number="8">0</span></div>
           <div><p>недель интенсивного обучения, занятия 3 раза в неделю</p></div>
         </div>
         <div class="motion-stat-content">
-          <div class="motion-stat-num">24</div>
+          <div class="motion-stat-num"><span class="number-box" data-number="24">0</span></div>
           <div><p>урока и домашних заданий с проверкой от тренера</p></div>
         </div>
         <div class="motion-stat-content">
-          <div class="motion-stat-num">7</div>
+          <div class="motion-stat-num"><span class="number-box" data-number="7">0</span></div>
           <div><p>работ в портфолио по окончании курса, 6 шотов и 1 итоговая работа</p></div>
         </div>
         <div class="motion-stat-content">
-          <div class="motion-stat-num">4</div>
+          <div class="motion-stat-num"><span class="number-box" data-number="4">0</span></div>
           <div><p>студента в каждой группе, у каждой группы свой куратор</p></div>
         </div>
       </div>
@@ -59,7 +59,44 @@
   </section>
 </template>
 
-<script></script>
+<script>
+document.addEventListener('scroll', () => {
+  const numberBoxes = document.querySelectorAll('.number-box')
+
+  numberBoxes.forEach((box) => {
+    // Skip if animation has already run
+    if (box.dataset.animated === 'true') {
+      return
+    }
+
+    const boxTop = box.getBoundingClientRect().top
+    const boxVisible = window.innerHeight - boxTop
+
+    if (boxVisible > 0) {
+      // Mark as animated to prevent re-running
+      box.dataset.animated = 'true'
+
+      const finalNumber = parseInt(box.getAttribute('data-number'), 10)
+      let startNumber = 0
+
+      const increment = Math.ceil(finalNumber / 100) // Increment step
+
+      const updateNumber = () => {
+        if (startNumber < finalNumber) {
+          startNumber += increment
+          if (startNumber > finalNumber) {
+            startNumber = finalNumber
+          }
+          box.textContent = startNumber
+          requestAnimationFrame(updateNumber)
+        }
+      }
+
+      updateNumber()
+    }
+  })
+})
+</script>
 
 <style scoped>
 section {
